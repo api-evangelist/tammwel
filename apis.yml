@@ -1,7 +1,24 @@
 aid: tammwel
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tammwel.png
 name: Tammwel
-description: Tammwel is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tammwel (Tamawal) is a Saudi Arabian digital financing intermediary that connects consumers with
+  licensed financial institutions to compare and obtain Sharia-compliant financing. Its consumer platform and
+  iOS/Android apps let users apply once and receive multiple offers across four products - personal loans,
+  credit cards, auto financing, and mortgage financing (each up to 150,000 SAR) - emphasizing transparent
+  pricing with no hidden fees. The company is a portfolio company of 500 Global. As of this enrichment pass
+  Tammwel publishes no public API, developer portal, documentation, SDK, or /.well-known discovery surface;
+  this profile captures its identity and infrastructure security posture.
 url: https://raw.githubusercontent.com/api-evangelist/tammwel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Financial Services
+- Fintech
+- Lending
+- Personal Finance
+- Saudi Arabia
+- Islamic Finance
+- Comparison Platform
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tammwel-domain-security.yml
 - type: Website
   url: https://tamawal.sa
+- type: Support
+  url: mailto:info@tamawal.sa
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  note: No public API/developer surface (well-known, dev subdomains, llms.txt all 404/403);
+    consumer fintech financing-comparison platform. Domain-security probed.
