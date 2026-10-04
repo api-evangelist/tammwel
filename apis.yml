@@ -42,7 +42,7 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Fintech
 - Lending
 - Personal Finance
@@ -58,6 +58,7 @@ tags_raw:
 - Saudi Arabia
 - Islamic Finance
 - Comparison Platform
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
